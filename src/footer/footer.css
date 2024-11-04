@@ -1,0 +1,201 @@
+*{
+    text-decoration: none;
+}
+
+.footer-Body{
+    background-color: black;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-Nav-Body{
+    width: 95vw;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.footer-Nav-Items-Slide{
+    width: 45%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.footer-Nav-Items{
+    width: 48%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.footer-Nav-Items>.f-item{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  
+}
+
+.footer-Nav-Items>.f-item>a>p{
+    color: white;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all ease-in-out 500ms;
+    overflow: hidden;
+}
+
+.footer-Nav-Items>.f-item>a>p:hover{
+    color: rgb(44, 139, 248);
+    font-size: 15px;
+}
+
+.socials{
+    width: 50%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.socials>p{
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.socials>.contacts-items{
+    width: 95%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.contacts-items>.items{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.items>i{
+    overflow: hidden;
+}
+
+.whatsapp{
+    color: green;
+    border: 1px solid green;
+}
+
+.whatsapp:hover{
+    color: white;
+    background-color: green;
+    border: 1px solid white;
+    transition: all ease-in-out 600ms;
+}
+
+.phone{
+    color: grey;
+    border: 1px solid rgb(98, 99, 98);
+}
+
+.phone:hover{
+    color: white;
+    background-color: grey;
+    border: 1px solid white;
+    transition: all ease-in-out 600ms;
+}
+
+.facebook{
+    color: rgb(44, 139, 248);
+    border: 1px solid rgb(38, 150, 241);
+}
+
+.facebook:hover{
+    color: white;
+    background-color: rgb(38, 150, 241);
+    border: 1px solid white;
+    transition: all ease-in-out 600ms;
+}
+
+.g-mail{
+    color:red;
+    border: 1px solid white;
+ }
+
+ .g-mail:hover{
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+    transition: all ease-in-out 600ms;
+}
+.copyright{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.copyright>p{
+    font-size: 11px;
+    font-family: cursive;
+    font-style: italic;
+    color: white;
+}
+
+@media screen and (max-width : 800px){
+    .footer-Nav-Body{
+        flex-direction: column;
+        height: 1170vh;
+        width: 100vw;
+    }
+
+    .footer-Nav-Items-Slide{
+        width: 80vw;
+    }
+
+    .socials{
+        width: 90vw;
+    }
+    .socials>p{
+        font-size: 17px;
+        color: white;
+        font-weight: 400;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .socials>p{
+        font-size: 20px;
+        color: white;
+        font-weight: 400;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}

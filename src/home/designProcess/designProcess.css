@@ -1,0 +1,110 @@
+.designProcess-body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(15, 76, 167);
+    display: flex;
+    flex-direction: column;
+}
+
+.designProcess-header{
+    width: inherit;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.designProcess-header>p{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: rgb(0, 174, 255);
+    text-align: center;
+}
+
+.designProcess-header>span{
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: rgb(247, 245, 245);
+    text-align: center;
+    width: 85vw;
+}
+
+.box-house{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-house>.box{
+    width: 23%;
+    height: 75%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 6px;
+    border: 0.3px solid yellow;
+}
+
+.box>p{
+    width: 100%;
+    height: 36%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: rgb(39, 189, 248);
+    text-align: center;
+}
+
+.box>span{
+    width: 90%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px){
+   .box>span{
+    font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 800px) {
+
+    .designProcess-body{
+        height: auto;
+    }
+
+    .designProcess-header{
+        height: 40vh;
+    }
+
+    .box-house{
+        flex-direction: column;
+        height: 1290px;
+    }
+
+    .box-house>.box{
+        width: 95vw;
+        height: 300px;
+    }
+}

@@ -1,0 +1,141 @@
+.team-background{
+    background-color: black;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    position: absolute;
+    background-image: url(images.jpeg);
+    background-repeat: no-repeat;
+    background-size: 99vw 84vh;
+    background-position: 0vh -10vh;
+}
+
+.team-overlay{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: calc(100vh - 100px);
+    opacity: 0.6;
+    position: relative;
+    top: 0px;
+}
+
+.team-house{
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    top: 100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.team-intro-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    width: 80vw;
+    margin-top: 0vh;
+    margin-left: 9vw;
+    padding-bottom: 15vh;
+}
+
+.team-intro-section>p{
+    font-size: 46px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(116, 212, 253);
+    text-align: center;
+    font-style: oblique;
+}
+
+
+.team-intro-section>span{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Verdana;
+    font-style: italic;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50vw;
+}
+
+.player-card{
+    background-color: black;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 30px;
+    margin-top: 5vh;
+    justify-content: space-evenly;
+}
+
+.player-card>.image-div{
+    width: 30vw;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.image-div>img{
+    height: 100%;
+    width: 100%;
+}
+
+.player-card>.info{
+    width: 50vw;
+    height: 98%;
+    overflow: hidden;
+}
+
+.info>.title{
+    font-size: 35px;
+    color: white;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info>.bio{
+    font-size: 25px;
+    color: rgb(214, 242, 255);
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info>.description{
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.info>.team-contact{
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+@media screen and (max-width:900px){
+    .player-card{
+        height: 104vh;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .player-card>.image-div{
+        height: 30%;
+        width: 90vw;
+    }
+
+    .player-card>.info{
+        height: 70%;
+        width: 90vw;
+    }
+}

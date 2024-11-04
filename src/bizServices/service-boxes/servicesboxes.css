@@ -1,0 +1,116 @@
+.bizservice-boxes-background{
+    background-color: black;
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.box-slide{
+    width: 100vw;
+    height: 47%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bizservice-boxes-background>.box-slide>.box{
+    width: 32%;
+    height: 90%;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(0, 132, 255);
+}
+
+/* .service-boxes-background>.box-slide>.yellow{
+    background-color: rgb(136, 136, 29);
+}
+
+.service-boxes-background>.box-slide>.green{
+    background-color: rgb(21, 138, 21);
+}
+
+.service-boxes-background>.box-slide>.red{
+    background-color: red;
+}
+
+.service-boxes-background>.box-slide>.blue{
+    background-color: rgb(0, 102, 255);
+}
+
+.service-boxes-background>.box-slide>.orange{
+    background-color: orangered;
+}
+
+.service-boxes-background>.box-slide>.purple{
+    background-color: rgb(150, 35, 150);
+} */
+
+.bizservice-boxes-background>.box-slide>.box>p{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(231, 223, 223);
+}
+
+.bizservice-boxes-background>.box-slide>.box>span{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width : 1000px){
+    .bizservice-boxes-background{
+        height: 145vh;
+        flex-direction: row;
+    }
+    .box-slide{
+        width: 48vw;
+        height: 140vh;
+        flex-direction: column;
+    }
+
+    .bizservice-boxes-background>.box-slide>.box{
+        width: 98%;
+        height: 31%;
+    }
+}
+
+@media screen and (max-width : 600px){
+    .bizservice-boxes-background{
+        height: 250vh;
+        flex-direction: column;
+    }
+    .box-slide{
+        width: 100vw;
+        height: 125vh;
+        flex-direction: column;
+    }
+
+    .bizservice-boxes-background>.box-slide>.box{
+        width: 96%;
+        height: 31.5%;
+    }
+}
