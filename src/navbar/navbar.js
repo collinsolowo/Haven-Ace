@@ -7,8 +7,6 @@ function AllNav() {
         responsiveNav.classList.toggle('show')
         const navbar = document.querySelector('.navBar')
         navbar.classList.toggle('fixed')
-        const Body = document.body
-        body.style.display = 'none'
     }
     return(
         <>
