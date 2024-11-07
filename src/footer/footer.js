@@ -11,7 +11,7 @@ function Footer() {
         }
 
         const handleWhatsapp = () => {
-            window.location.href=  'wa.me/+2348139386017'
+            window.location.href=  'https://wa.me/+2348139386017'
         }
 
         const handleFacebook = () =>{
@@ -33,21 +33,7 @@ function Footer() {
             <Link to='/bizservices'><p>Business <br/>Development <br/>Services</p></Link>
         </div>
         <div className='f-item'>
-            <Link to='/ourteam'><p>Home</p></Link>
-        </div>
-        </div>
-        <div className='footer-Nav-Items'>
-        <div className='f-item'>
-            <Link to='/'><p>Home</p></Link>
-        </div>
-        <div className='f-item'>
-            <Link to='/'><p>Home</p></Link>
-        </div>
-        <div className='f-item'>
-            <Link to='/'><p>Home</p></Link>
-        </div>
-        <div className='f-item'>
-            <Link to='/'><p>Home</p></Link>
+            <Link to='/ourTeam'><p>Our Team</p></Link>
         </div>
         </div>
         </div>

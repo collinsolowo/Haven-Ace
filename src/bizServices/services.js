@@ -11,7 +11,6 @@ function BizServices() {
         <AllNav/>
         <ServiceBackground/>
         <ServiceBoxes/>
-        <OtherServices/>
         <Footer/>
         </>
     )

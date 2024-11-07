@@ -76,4 +76,8 @@
     .service-text{
         width: 90vw;
     }
+
+    .service-Intro{
+        height: 110vh;
+    }
 }

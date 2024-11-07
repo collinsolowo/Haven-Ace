@@ -95,20 +95,14 @@ function Background() {
                 </div>
                 <div className='content-Background'></div>
                 <div className='overlay'></div>
-                <div className='full-Content'>
+                <div className='full-Content'></div>
                     <div className='right-house'>
                         <div className='haven-ace'>
                             <p><marquee>HavenAce Business Process Concepts</marquee></p>
                         </div>
                         <div className='more-info'>
-                            <p>Need a website?<br /><span className='shrink'>Step into the very best of web-development solutions.<br />Here at HavenAce Business Process Concepts, we offer the very best in web-development, web-debugging and product-designing.<br /></span><span>Register with us now to get  the very best.</span></p>
+                            <p>Need a website?<br /><span className='shrink'>Step into the very best of web-development solutions.<br />Here at HavenAce Business Process Concepts, we offer the very best in web-development, web-debugging and product-designing.<br /></span></p>
                         </div>
-                        <div className='register-button-house'>
-                            <div className='register-button'>
-                                <p>Register Now</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </>

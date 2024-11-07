@@ -21,6 +21,7 @@
     font-weight: 700;
     color: rgb(0, 174, 255);
     text-align: center;
+    overflow:hidden;
 }
 
 .designProcess-header>span{
@@ -30,6 +31,7 @@
     color: rgb(247, 245, 245);
     text-align: center;
     width: 85vw;
+    overflow:hidden;
 }
 
 .box-house{
@@ -95,7 +97,7 @@
     }
 
     .designProcess-header{
-        height: 40vh;
+        height: 60vh;
     }
 
     .box-house{
@@ -104,7 +106,7 @@
     }
 
     .box-house>.box{
-        width: 95vw;
-        height: 300px;
+        width: 90vw;
+        height: 240px;
     }
 }

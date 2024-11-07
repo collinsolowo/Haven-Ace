@@ -28,7 +28,6 @@ function TeamBackground() {
                     <p className='title'>ISAAC OLOWOLAGBA</p>
                     <p className='bio'>CEO Haven Ace Business Process Concepts<br/><br/>Business Process Manager</p>
                     <span className='description'>With over 17 years of business process management and re-engineering,design,modelling,execution,monitoring and optimization.Professional in process identification,risk management,control design and implementation, monitoring and evaluation.Total business process internal control management across all industries. </span>
-                    <p className='team-contact'>Contact Collins :</p>
                 </div>
         </div>
         <div className='player-card'>
