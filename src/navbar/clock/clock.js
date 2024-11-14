@@ -1,49 +1,35 @@
 import './clock.css'
-
+import React, {useState, useEffect} from 'react'
 function Clock() {
-    function showTime(){
-        const date = new Date()
-        
-        var hour = date.getHours()
-        var minute = date.getUTCMinutes()
-        var second = date.getUTCSeconds()
-        
-        
-        if (hour === 0) {
-            hour = 12;
-        }
-        
-        hour = (hour < 10) ? "0" + hour : hour;
-        minute = (minute < 10) ? "0" + minute : minute; 
-        second = (second < 10) ? "0" + second : second; 
-        
-        setTimeout(showTime,1000)
-        
-        const bodyHour = document.querySelector('.hour').firstElementChild
-        const bodyMinute = document.querySelector('.minute').firstElementChild
-        const bodySecond = document.querySelector('.second').firstElementChild
-        
-        bodyHour.textContent = hour
-        bodyMinute.textContent = minute
-        bodySecond.textContent = second
-        
-        // for(let i = 0; i < div.length; i++){
-        //     div[i].firstElementChild.classList.toggle('show')
-        // }
-        
-        
-        console.log(hour, minute, second)
-        }
+    const [date, setDate] = useState(new Date());
+    const [hour,setHour]  = useState(date.getHours());
+    const [minute,setMinute] = useState(date.getMinutes());
+    const [second,setSecond] = useState(date.getSeconds());
+    const [amPm,setAmPm] = useState(hour>= 12 ? 'PM' : 'AM');
+
+    useEffect(() => {
+        const intervalid = setInterval(() => {
+            const now = new Date();
+            setHour(now.getHours());
+            setMinute(now.getMinutes());
+            setSecond(now.getSeconds());
+            setAmPm(now.getHours() >= 12 ? 'PM' : 'AM');
+        },1000);
+        return() => clearInterval(intervalid)
+    })  
+  
     return(
         <>
-            <div class="clock" onClick={showTime}>
-            <div class="hour"><p>09</p></div>
-            <div class="minute"><p>19</p></div>
-            <div class="second"><p>28</p></div>
-            </div>
+                    <div className='nav-Contacts'>
+                        <div class="clock">
+                            <div class="hour"><p>{hour % 12 || 12} :</p></div>
+                            <div class="minute"><p>{minute.toString().padStart(2, '0')} :</p></div>
+                            <div class="second"><p>{second.toString().padStart(2, '0')}</p></div>
+                        </div>
+                    </div>
         </>
-    )
-}
+    )}
+
 
 
 export default Clock

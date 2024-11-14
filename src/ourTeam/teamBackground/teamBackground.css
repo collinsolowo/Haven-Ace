@@ -1,3 +1,155 @@
+.team{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.team>.navBar{
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    border-bottom: 1px dotted white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navBar>.nav-Logo{
+    width: 15%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-Logo>img{
+    height: 70px;
+}
+
+.navBar>.nav-Contents{
+    width: 60%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-Contents>.item{
+    width: 20%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item>a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: all ease-in-out 500ms;
+}
+
+.item>a:hover{
+    color: rgb(58, 131, 214);
+    font-size: 17px;
+    font-weight: 900;
+    transition: all ease-in-out 500ms;
+}
+
+.item>a:nth-child(3){
+    font-size: 12px;
+}
+
+.nav-Contacts{
+    width: 25%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.res-nav-bar{
+    background-color: black;
+    width: 99vw;
+    margin-top: 101px;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    display: none;
+    left: -102%;
+    transition: all ease-in-out 500ms;
+    overflow: hidden;
+}
+
+.res-nav-bar>.item{
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px dotted white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.res-nav-bar>.item:last-child{
+    border-bottom: none;
+}
+
+.res-nav-bar>.item>a{
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.res-nav-bar>.item>a:nth-child(3){
+    font-size: 32px;
+}
+
+.res-nav-bar>.item>a:nth-child(3):hover{
+    font-size: 32px;
+    color: rgb(58, 131, 214);
+}
+
+.res-nav-bar>.item>a:hover{
+    color: rgb(58, 131, 214);
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.show{
+   left: 0;
+   transition: all ease-in-out 500ms;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.res-nav-Icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    align-self: center;
+    margin-left: 50vw;
+    color: white;
+    font-size: 30px;
+}
+
+.res-nav-Icon>i{
+    cursor: pointer;
+}
+
 .team-background{
     background-color: black;
     width: 100vw;
@@ -7,6 +159,7 @@
     background-repeat: no-repeat;
     background-size: 99vw 84vh;
     background-position: 0vh -10vh;
+    top: 100px;
 }
 
 .team-overlay{
@@ -120,6 +273,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
 }
+  
+.offDisplay{
+    display: none;
+ }
 
 @media screen and (max-width:900px){
     .player-card{
@@ -137,5 +294,28 @@
     .player-card>.info{
         height: 70%;
         width: 90vw;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .navBar>.nav-Contents{
+        display: none;
+    }
+
+    .res-nav-Icon{
+        display: flex;
+    }
+    
+    .res-nav-bar{
+      display: flex;
+    }
+
+    .contact-Logo>i:first-child{
+        display: none;
+    }
+
+    .contact-Logo>i:last-child{
+        display: none;
     }
 }

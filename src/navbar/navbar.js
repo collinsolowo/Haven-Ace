@@ -1,12 +1,15 @@
 import './navbar.css'
 import NavLogo from './havenaacelogo.png'
 import { Link } from 'react-router-dom'
+import Clock from './clock/clock'
 function AllNav() {
     function show() {
         const responsiveNav = document.querySelector('.res-nav-bar')
         responsiveNav.classList.toggle('show')
         const navbar = document.querySelector('.navBar')
         navbar.classList.toggle('fixed')
+        document.body.style.overflow = 'hidden'
+        
     }
     return(
         <>
@@ -31,6 +34,7 @@ function AllNav() {
                 <div className='res-nav-Icon' onClick={show}>
                     <i class="fa-solid fa-bars"></i>
                 </div>
+                <Clock/>
             </div>
             <div className='res-nav-bar'>
                     <div className='item'>

@@ -17,7 +17,7 @@
     height: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-bottom: 10px;
 }
@@ -27,7 +27,7 @@
     height: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;  
 }
 
@@ -52,7 +52,7 @@
 
 .footer-Nav-Items>.f-item>a>p{
     color: white;
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     cursor: pointer;
