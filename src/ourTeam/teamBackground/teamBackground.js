@@ -69,6 +69,7 @@ function TeamBackground() {
                             <div class="hour"><p>{hour % 12 || 12} :</p></div>
                             <div class="minute"><p>{minute.toString().padStart(2, '0')} :</p></div>
                             <div class="second"><p>{second.toString().padStart(2, '0')}</p></div>
+                            <div className='am'><p>{amPm.toString()}</p></div>
                         </div>
                     </div>
                 </div>

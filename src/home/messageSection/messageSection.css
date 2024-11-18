@@ -191,3 +191,22 @@
 .show{
     display: block;
 }
+
+@media screen and (max-width:900px) {
+
+    .names-section>.column>input::placeholder{
+        font-size: 16px;
+    }
+
+    .telephone-section>.column>input::placeholder{
+        font-size: 16px;
+    }
+
+    .writeup-section>.column>input::placeholder{
+        font-size: 16px;
+    }
+
+    .error-message{
+        font-size: 16px;
+    }
+}

@@ -76,7 +76,7 @@
 }
 
 .nav-Contacts{
-    width: 25%;
+    width: 30%;
     height: inherit;
     display: flex;
     flex-direction: row;
@@ -333,5 +333,33 @@
 
     .right-house>.more-info{
         height: 60%;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .navBar>.nav-Contents{
+        display: none;
+    }
+
+    .res-nav-Icon{
+        display: flex;
+        margin-left: 15vw;
+    }
+    
+    .res-nav-bar{
+      display: flex;
+    }
+
+    .contact-Logo>i:first-child{
+        display: none;
+    }
+
+    .contact-Logo>i:last-child{
+        display: none;
+    }
+    
+    .nav-Contacts{
+        width: 50vw;
     }
 }

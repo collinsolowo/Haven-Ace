@@ -305,6 +305,7 @@
 
     .res-nav-Icon{
         display: flex;
+        margin-left: 15vw;
     }
     
     .res-nav-bar{
@@ -317,5 +318,9 @@
 
     .contact-Logo>i:last-child{
         display: none;
+    }
+    
+    .nav-Contacts{
+        width: 50vw;
     }
 }

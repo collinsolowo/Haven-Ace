@@ -1,6 +1,11 @@
 import './messageSection.css'
-
+import { useForm, ValidationError } from '@formspree/react';
 function MessageSection() {
+
+    const [state, handleSubmit] = useForm('mgvezvqy')
+    if (state.succeeded) {
+         return alert('Your E-mail has been submitted. Kindly await our immediate response')
+    }
     function submit(){
 
             //  First Name
@@ -114,7 +119,10 @@ function MessageSection() {
                     <p>Get in touch with us.</p>
                     <span>Let’s help you to achieve your goals and grow your business with our website design packages.</span>
                 </div>
-                <div className='input-section'>
+                <form onSubmit={handleSubmit} action='https://formspree.io/f/mgvezqy'
+                      method='POST'
+                      enctype='multipart/form-data'>
+                    <div className='input-section'>
             <div className='names-section'>
                 <div className='column'>
                 <input placeholder='First Name'/>
@@ -146,8 +154,9 @@ function MessageSection() {
                 <div className='error-message'>*Message should contain minimum of 30 words</div>
                 </div>
             </div>
-            <div className='submit-button' onClick={submit}>Submit Message</div>
+            <div className='submit-button' type='submit' onClick={submit} disabled={state.submitting}>Submit Message</div>
             </div>
+             </form>
             </div>
             </>
         )
